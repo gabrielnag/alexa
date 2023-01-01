@@ -1,0 +1,58 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "prece dormir",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "what do I do"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "VideoControlIntent",
+          "slots": [
+            {
+              "name": "video_action",
+              "type": "VideoAction"
+            }
+          ],
+          "samples": [
+            "{video_action}",
+            "{video_action} video"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "pause"
+              }
+            },
+            {
+              "name": {
+                "value": "play"
+              }
+            }
+          ],
+          "name": "VideoAction"
+        }
+      ]
+    }
+  },
+  "version": "4"
+}
